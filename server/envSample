@@ -1,0 +1,17 @@
+# PORT
+PORT =
+
+# DATABASE
+DB_HOST =
+DB_DATABASE =
+
+# TOKEN
+SECRET_KEY =
+
+# LOG
+LOG_FORMAT =
+LOG_DIR = ../logs
+
+# CORS
+ORIGIN = *
+CREDENTIALS = true

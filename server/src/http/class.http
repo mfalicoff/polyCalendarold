@@ -1,0 +1,66 @@
+###
+# Find All Classes
+GET  http://localhost:3001/class
+
+###
+# Find Class By Id
+GET  http://localhost:3001/class/620286216aa3b313f45671e4
+
+###
+# Find Class By Name
+GET  http://localhost:3001/class/single
+Content-Type: application/json
+
+{
+  "name": "INF3610"
+}
+
+###
+# Find Many Class By Name
+GET  http://localhost:3001/class/manyName
+Content-Type: application/json
+
+[
+  "inf3610",
+  "inf2010"
+]
+
+###
+# Find Many Class By Name
+GET  http://localhost:3001/class/many
+Content-Type: application/json
+
+{
+  "name": "inf"
+}
+
+###
+# Create Class
+POST  http://localhost:3001/class
+Content-Type: application/json
+
+{
+  "name": "testClass",
+  "schedule": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+}
+
+###
+# Scrape Classes
+POST  http://localhost:3001/class/scrape
+
+###
+# Modify Class By Id
+PUT  http://localhost:3001/class/1
+Content-Type: application/json
+
+{
+  "email": "example@email.com",
+  "password": "password"
+}
+
+###
+# Delete Class By Id
+DELETE  http://localhost:3001/class/6201a4c0025ada2a50124b43
+
+
+

@@ -1,0 +1,29 @@
+###
+# User Signup
+POST  http://localhost:3001/signup
+Content-Type: application/json
+
+{
+    "email": "example@email.com",
+    "password": "password"
+}
+
+###
+# User Login
+POST  http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email": "example@email.com",
+    "password": "password"
+}
+
+###
+# User Logout
+POST  http://localhost:3001/logout
+Content-Type: application/json
+
+{
+    "email": "example@email.com",
+    "password": "password"
+}
